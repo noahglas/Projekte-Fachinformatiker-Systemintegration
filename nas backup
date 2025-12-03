@@ -1,0 +1,42 @@
+# Automatisiertes Backup-System mit Restic (Raspberry Pi 5 + NAS)
+
+## 💡 Kurzbeschreibung
+In diesem Projekt habe ich ein automatisiertes, verschlüsseltes Backup-System mit **Restic** aufgebaut.  
+Der Raspberry Pi sichert regelmäßig definierte Ordner (z. B. Dokumente, Konfigurationen, wichtige Skripte) auf meinen **NAS-Server**. Die Backups laufen vollständig automatisiert per Cronjob und nutzen die schnelle, effiziente und verschlüsselte Backup-Engine von Restic.
+
+Das Projekt zeigt mein Verständnis von Datensicherheit, Automatisierung und Linux-Systemadministration.
+
+---
+
+## 🎯 Ziele des Projekts
+- Einrichten eines zuverlässigen Backup-Systems auf dem Raspberry Pi
+- Nutzung eines NAS als sicheren Backup-Speicherort
+- Automatisierung via Cronjobs  
+- Verschlüsselte Backups mit Restic
+- Prüfung der Backups & Dokumentation der Wiederherstellung
+- Monitoring: Backup-Erfolg per Logfiles überprüfen
+
+---
+
+## 🧰 Verwendete Technologien & Tools
+- **Hardware:** Raspberry Pi 5, NAS-Server
+- **Software:**  
+  - Restic (verschlüsseltes Backup)
+  - Bash-Skripte
+  - Cron (Automatisierung)
+- **Speicherziel:**  
+  - NAS per SMB oder NFS
+- **Betriebssystem:** Raspberry Pi OS Lite
+
+---
+
+## 🛠️ Systemarchitektur
+
+### Workflow:
+1. Der Raspberry Pi mountet beim Backup das NAS-Verzeichnis.
+2. Restic führt ein inkrementelles, verschlüsseltes Backup aus.
+3. Der Backup-Prozess wird geloggt („Backup erfolgreich / fehlgeschlagen“).
+4. Am Ende wird der NAS-Mount sauber getrennt.
+5. Ein Cronjob führt den Prozess regelmäßig aus.
+
+### Architekturdiagramm
