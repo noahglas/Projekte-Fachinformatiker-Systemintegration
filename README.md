@@ -1,8 +1,8 @@
 # Projekte-Fachinformatiker-Systemintegrati
 
-Perfekt — hier kommt deine vollständig ausgefüllte README.md für das Projekt
+
 „Automatisiertes Backup-System mit Restic + Raspberry Pi + NAS“
-bereit zum direkten Einsatz in deinem Portfolio oder GitHub.
+
 
 📄 README.md – Automatisiertes Backup-System (Restic + NAS + Raspberry Pi)
 # Automatisiertes Backup-System mit Restic (Raspberry Pi 5 + NAS)
